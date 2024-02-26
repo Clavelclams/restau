@@ -1,11 +1,22 @@
 header {
     background-color: #970747;
 }
-header img {
-    height: 171px;
-    margin-left: 3vw;
+.connexion{
+    color: black;
+    transition: 0.3s color;
 }
 
-.nav-header {
-    margin-left: 30vw;
+.section-categorie {
+    border-color: red yellow green hsla(60, 90%, 50%, .8);
+    background-color: beige;
+}
+.navbar-toggler {
+    border: none;
+}
+
+.navbar-toggler:hover {
+    border: none;
+}
+aside {
+    background-image: url('asset/img/search_4.jpg');
 }
