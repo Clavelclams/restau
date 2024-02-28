@@ -20,3 +20,17 @@ header {
 aside {
     background-image: url('asset/img/search_4.jpg');
 }
+.test {
+    border :#970747;
+    background: beige;
+}
+.bord {
+    border: 3px solid red ;
+}
+.bord1 {
+    border-color: aqua;
+    background: rgb(192, 160, 180);
+}
+.bord2 {
+    background: #000;
+}
