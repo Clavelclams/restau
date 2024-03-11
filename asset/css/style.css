@@ -39,9 +39,7 @@ aside {
     border: 3px solid; 
 } 
 .container-fluid {
-    border: 3px solid;
     --bs-gutter-x: 0;
-    
 }
 .row {
     --bs-gutter-x: 0;
@@ -50,6 +48,7 @@ aside {
  
 .bordureRouge {
     border: 3px solid red;
+    background-color: antiquewhite;
     padding: 1rem;
 }
 .bordureVerte {
@@ -66,12 +65,21 @@ aside {
 }
 .cate {
     margin: 5rem;
-    background-color: white;
 }
+.margin-card {
+    margin: 1rem;
+}
+
 .Plats {
     margin: 3rem;
 }
 .text-plat {
     background-color: rgba(255, 255, 255, 0.7);
     font-size: 1.5rem;
+}
+.footer {
+    background-color: #970747;
+}
+.footer a {
+    color: #000;
 }
