@@ -1,3 +1,6 @@
+body {
+    overflow-x: hidden;
+}
 header {
     background-color: #970747;
 }
@@ -35,9 +38,7 @@ aside {
     background: #000;
 }
 /* test */
-.container { 
-    border: 3px solid; 
-} 
+
 .container-fluid {
     --bs-gutter-x: 0;
 }

@@ -29,10 +29,10 @@
                       <a class="nav-link mx-lg-2" href="Catégorie.html">Catégorie</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link mx-lg-2 active" href="plat.html">Plats</a>
+                      <a class="nav-link mx-lg-2" href="plat.html">Plats</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link mx-lg-2" href="contact.html">Contact</a>
+                      <a class="nav-link mx-lg-2 active" href="contact.html">Contact</a>
                     </li>
                   </ul>
                   
@@ -124,98 +124,44 @@
           </nav>
         </div>
       </div>
-      <!-- section plat -->
+      <!-- section contact -->
       <div class="row section-categorie d-flex">
         <section class="col-12 justify-content-center row">
-          <div class="row mt-3 ms-4">
-            <h2 class="ms-4">Nos Burgers</h2>
+          <div class="row m-4">
+            <h2 class=" mt-4 ms-4 text-center">Contact</h2>
           </div>
-          <div class="card m-4 me-4 col-md-2 w-25 mb-3">
-            <div class="row g-0 d-flex align-items-center">
-              <div class="col-md-4">
-                <img src="asset/img/burger1.png" class="img-fluid rounded" alt="...">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">Burger BBQ</h5>
-                  <p class="card-text">Un burger savoureux avec un steak de bœuf grillé, du fromage suisse, de l'oignon rouge caramélisé, 
-                    de la laitue croquante et de la sauce barbecue maison, servi sur un pain brioché toasté.
-                  </p>
-                  <p class="card-text text-end">
-                    <button class="btn btn-primary">Commander</button>
-                  </p>
+          <div class="row mb-4">
+            <form>
+              <div class="row ms-4 mb-3">
+                <div class="col ms-4">
+                  <label for="nom" class="form-label">Nom</label>
+                  <input type="text" class="form-control" placeholder="Texiou">
+                </div>
+                <div class="col me-4 ms-4">
+                  <label for="prénom" class="form-label">Prénom</label>
+                  <input type="text" class="form-control" placeholder="Gérard">
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="card m-4 col-md-2 w-25 mb-3">
-            <div class="row g-0 d-flex align-items-center">
-              <div class="col-md-4 ">
-                <img src="asset/img/pate.png" class="img-fluid rounded" alt="...">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">Burger Mushroom Swiss</h5>
-                  <p class="card-text">
-                    Un burger gourmet garni de champignons sautés, 
-                    de fromage suisse fondant, de laitue fraîche, de tomates et d'une délicieuse sauce à l'ail, le tout servi sur un pain ciabatta grillé.
-                  </p>
-                  <p class="card-text text-end">
-                    <button class="btn btn-primary">Commander</button>
-                  </p>
+              <div class="row ms-4 mb-3">
+                <div class="col ms-4">
+                  <label for="mail" class="form-label">Email</label>
+                  <input type="email" class="form-control" placeholder="monadresse@email.fr">
+                </div>
+                <div class="col me-4 ms-4">
+                  <label for="tel" class="form-label">Téléphone</label>
+                  <input type="tel" class="form-control" placeholder="06-XX-XX-XX-02">
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="card m-4 col-md-2 w-25 ms-4 mb-3">
-            <div class="row g-0 d-flex align-items-center">
-              <div class="col-md-4">
-                <img src="asset/img/pate.png" class="img-fluid rounded" alt="...">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">Burger Bacon</h5>
-                  <p class="card-text">
-                    Un burger juteux garni de bacon croustillant, de fromage cheddar, 
-                    de laitue fraîche, de tomates et de sauce barbecue, le tout enveloppé dans un pain aux graines de sésame.
-                  </p>
-                  <p class="card-text text-end">
-                    <a href="commande.html">
-                      <button class="btn btn-primary">Commander</button>
-                    </a>
-                  </p>
+              <div class="row ms-4 mb-3">
+                <div class="col me-4 ms-4">
+                  <label for="demande" class="form-label">Votre demande :</label>
+                  <textarea class="form-control" id="demande" rows="3"></textarea>
                 </div>
               </div>
-            </div>
-          </div>
-          <div class="card plat-carte col-md-2 w-25 mb-3">
-            <div class="row g-0 d-flex align-items-center">
-              <div class="col-md-4">
-                <img src="asset/img/pate.png" class="img-fluid rounded" alt="...">
-              </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                  <p class="card-text text-end">
-                    <button class="btn btn-primary">Commander</button>
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row justify-content-center">
-            <nav class="col-12" aria-label="...">
-              <ul class="pagination justify-content-around">
-                <li class="page-item disabled">
-                  <span class="page-link">Précedent</span>
-                </li>
-                
-                <li class="page-item">
-                  <a class="page-link" href="#">Suivant</a>
-                </li>
-              </ul>
-            </nav>
+              <p class="text-end me-4">
+                <button type="submit" class="btn btn-primary me-4">Envoyer</button>
+              </p>
+            </form>
           </div>
         </section>
       </div>

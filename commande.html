@@ -76,7 +76,7 @@
                         <a class="nav-link mx-lg-2 active" href="plat.html">Plats</a>
                       </li>
                       <li class="nav-item">
-                        <a class="nav-link mx-lg-2" href="#">Contact</a>
+                        <a class="nav-link mx-lg-2" href="contact.html">Contact</a>
                       </li>
                     </ul>
                     
@@ -143,15 +143,37 @@
                   </p>
                   <div class="input-group mb-3">
                     <span class="input-group-text">Quantité</span>
-                    <input type="number" class="form-control" value="1" min="1">
+                    <input type="number" class="form-control col-md2" value="1" min="1">
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="row">
-            <form action="">
-              <label for=""></label>
+          <div class="row ">
+            <form class="d-flex flex-column flex-wrap align-content-center">
+              <div class="row mb-3 ">
+                <div class="col-md-8 ms-4">
+                  <label for="nom" class="form-label">Nom et Prénom</label>
+                  <input type="text" class="form-control" placeholder="Gerard">
+                </div>
+              </div>
+              <div class="row ms-4 mb-3">
+                <div class="col-md-4 me-4">
+                  <label for="mail" class="form-label">Email</label>
+                  <input type="email" class="form-control" placeholder="Email@exemple.fr">
+                </div>
+                <div class="ms-4 col-md-4">
+                  <label for="tel" class="form-label">Téléphone</label>
+                  <input type="tel" class="form-control" placeholder="06-XX-XX-XX-02">
+                </div>
+              </div>
+              <div class="row ms-4 col-md-8 mb-3">
+                <label for="adresse" class="form-label">Votre adresse  :</label>
+                <textarea class="form-control" id="adresse" rows="3"></textarea>
+              </div>
+              <p class="text-end me-4">
+                <button type="submit" class="btn btn-primary me-4">Valider</button>
+              </p>
             </form>
           </div>
         </section>
@@ -162,7 +184,7 @@
       <!-- footer -->
       <div class="row footer d-flex">
         <footer class="row col-12 ">
-          <div class="row">
+          <div class="row m-2">
             <ul class="nav justify-content-center">
               <li class="nav-item">
                 <a class="nav-link mx-lg-2" href="#">
@@ -194,8 +216,14 @@
               </li>
             </ul>
           </div>
-        </footer>
-
+          <div class="row m-2 my-5">
+            <!-- Copyright -->
+            <div class="text-center text-white p-3">
+              © 2024 Copyright:
+              <a class="text-white" href="https://velitoesport.com">velitoesport.com</a>
+            </div>
+          </div>
+          </footer>
       </div>
     </div>
     <!-- Bootstrap js -->
