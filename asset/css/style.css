@@ -70,6 +70,22 @@ aside {
 .margin-card {
     margin: 1rem;
 }
+/* animation */
+.margin-card:hover {
+    margin: 0;
+}
+.card:hover {
+    background-color: transparent;
+    border-color: transparent;
+}
+.connexion {
+    transition: transform 0.3s ease;
+  }
+.connexion:hover {
+    transition: opacity 0.3s ease;
+    opacity: 0.7;
+    transform: scale(1.3);
+}
 
 .Plats {
     margin: 3rem;
