@@ -58,8 +58,25 @@ $(document).ready(function()
         var a = $(this).text();
         alert(a);
     });
-    $(`#lien-test`).click(function()
+    // Clique sur  h2 le texte change mais reviens pas à la normal on va refaire un else if 
+    // $(`#Switch-text`).click(function()
+    // {
+    //  var letexte = $(`#p1`).text();
+    // $(`#p2`).text(letexte);
+    // })
+    var originalTextP2 = $('#p2').text(); // Sauvegarde du texte original de p2
+    $(`#Switch-text`).click(function()
     {
-        
-    })
+        var textP1 = $('#p1').text(); // Récupérer le texte de p1
+
+        // Si le texte actuel de p2 est différent du texte de p1,
+        // cela signifie que p2 a déjà été modifié, nous devons donc restaurer le texte original
+        if ($('#p2').text() !== textP1)
+        {
+            $('#p2').text(textP1); // Copier le texte de p1 dans p2
+        } else
+        {
+            $('#p2').text(originalTextP2); // Restaurer le texte original de p2
+        }
+    });
 })
