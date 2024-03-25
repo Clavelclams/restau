@@ -79,4 +79,16 @@ $(document).ready(function()
             $('#p2').text(originalTextP2); // Restaurer le texte original de p2
         }
     });
+    // Lorsqu'on quitte le champs (perte du `focus`)
+    $(`#demande`).blur(function()
+    {
+        // Récupère la valeur saisie dans le champ input #demande
+        var valeur = $(this).val();
+    });
+    // Attribue la valeur au champ input #demande
+    $(`#demande`).val(`Hello word`);
+    // On peut bien sûr passer une variable
+    var valeur = `Hello word`;
+    $(`#champ`).val(valeur);
+    
 })
