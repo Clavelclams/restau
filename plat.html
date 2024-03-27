@@ -28,14 +28,20 @@
                     <li class="nav-item">
                       <a class="nav-link mx-lg-2" href="Catégorie.html">Catégorie</a>
                     </li>
-                    <li class="nav-item">
-                      <a class="nav-link mx-lg-2 active" href="plat.html">Plats</a>
+                    <li class="nav-item dropdown"> <!-- Ajouter la classe "dropdown" pour l'élément "Plats" -->
+                      <a class="nav-link mx-lg-2 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Plats <!-- Texte de l'élément "Plats" -->
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown"> <!-- Liste déroulante -->
+                        <li><a class="dropdown-item" href="plat.html">Burger</a></li>
+                        <li><a class="dropdown-item" href="plat-pates.html">Pâtes</a></li>
+                        <li><a class="dropdown-item" href="plat-dessert.html">Dessert</a></li>
+                      </ul>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link mx-lg-2" href="contact.html">Contact</a>
                     </li>
-                  </ul>
-                  
+                  </ul>                     
                 </div>
               </div>
               <a href="#" class="connexion pe-3">
@@ -127,33 +133,35 @@
       <!-- section plat -->
       <div class="row section-categorie d-flex">
         <section class="col-12 justify-content-center row">
-          <div class="row mt-3 ms-4">
-            <h2 id="Switch-text" class="ms-4">Nos Burgers</h2>
+          <div class="row mt-3 justify-content-center ms-4">
+            <h2 class="ms-4 text-center">Nos Burgers</h2>
           </div>
-          <div class="card m-4 me-4 col-md-2 w-25 mb-3">
+          <div id="burger1" class="card m-4 me-4 col-md-2 w-25 burger-test mb-3">
             <div class="row g-0 d-flex align-items-center">
               <div class="col-md-4">
                 <img src="asset/img/burger1.png" class="img-fluid rounded" alt="...">
               </div>
-              <div class="col-md-8">
+              <div  class="col-md-8">
                 <div class="card-body">
                   <h5 class="card-title">Burger BBQ</h5>
                   <p id="p1" class="card-text">Un burger savoureux avec un steak de bœuf grillé, du fromage suisse, de l'oignon rouge caramélisé, 
                     de la laitue croquante et de la sauce barbecue maison, servi sur un pain brioché toasté.
                   </p>
                   <p class="card-text text-end">
-                    <button class="btn btn-primary">Commander</button>
+                    <a href="commande.html">
+                      <button class="btn btn-primary bouton-plat">Commander</button>
+                    </a>
                   </p>
                 </div>
               </div>
             </div>
           </div>
-          <div class="card m-4 col-md-2 w-25 mb-3">
+          <div id="burger2" class="card m-4 col-md-2 w-25 mb-3 burger-test">
             <div class="row g-0 d-flex align-items-center">
               <div class="col-md-4 ">
                 <img src="asset/img/burger3.png" class="img-fluid rounded" alt="...">
               </div>
-              <div class="col-md-8">
+              <div  class="col-md-8">
                 <div class="card-body">
                   <h5 class="card-title">Burger Mushroom Swiss</h5>
                   <p id="p2" class="card-text">
@@ -161,13 +169,15 @@
                     de fromage suisse fondant, de laitue fraîche, de tomates et d'une délicieuse sauce à l'ail, le tout servi sur un pain ciabatta grillé.
                   </p>
                   <p class="card-text text-end">
-                    <button class="btn btn-primary">Commander</button>
+                    <a href="commande.html">
+                      <button class="btn btn-primary bouton-plat">Commander</button>
+                    </a>
                   </p>
                 </div>
               </div>
             </div>
           </div>
-          <div class="card m-4 col-md-2 w-25 ms-4 mb-3">
+          <div id="burger3" class="card m-4 col-md-2 w-25 ms-4 mb-3 burger-test">
             <div class="row g-0 d-flex align-items-center">
               <div class="col-md-4">
                 <img src="asset/img/burger4.png" class="img-fluid rounded" alt="...">
@@ -181,47 +191,47 @@
                   </p>
                   <p class="card-text text-end">
                     <a href="commande.html">
-                      <button class="btn btn-primary">Commander</button>
+                      <button class="btn btn-primary bouton-plat">Commander</button>
                     </a>
                   </p>
                 </div>
               </div>
             </div>
           </div>
-          <div class="card plat-carte col-md-2 w-25 mb-3">
-            <div class="row g-0 d-flex align-items-center">
+          <div id="burger4" class="card plat-carte col-md-2 w-25 mb-3 burger-test">
+            <div class="row g-0 d-flex ms-4 align-items-center">
               <div class="col-md-4">
                 <img src="asset/img/burger2.png" class="img-fluid rounded" alt="...">
               </div>
               <div class="col-md-8">
                 <div class="card-body">
                   <h5 class="card-title">Le Sunchao Burger</h5>
-                  <p class="card-text">Un burger exotique avec du jambon grillé, de l'ananas rôti, du fromage suisse, de la laitue croquante, des oignons rouges et de la sauce teriyaki, servi sur un pain brioché doux.</p>
+                  <p class="card-text">
+                    Un burger exotique avec du jambon grillé, de l'ananas rôti, 
+                    du fromage suisse, de la laitue croquante, des oignons rouges et de la sauce teriyaki, servi sur un pain brioché doux.
+                  </p>
                   <p class="card-text text-end">
-                    <button id="bouton" class="btn btn-primary">Commander</button>
+                    <a href="commande.html">
+                      <button class="btn btn-primary bouton-plat">Commander</button>
+                    </a>
                   </p>
                 </div>
               </div>
             </div>
           </div>
-          <div class="row justify-content-center">
-            <nav class="col-12" aria-label="...">
-              <ul class="pagination justify-content-around">
-                <li class="page-item disabled">
-                  <span class="page-link">Précedent</span>
-                </li>
-                
-                <li class="page-item">
-                  <a class="page-link" href="#">Suivant</a>
-                </li>
-              </ul>
-            </nav>
-          </div>
         </section>
-      </div>
-      <div class="row ">
-
-      </div>
+        <div class="row justify-content-center">
+          <nav class="col-12" aria-label="...">
+            <ul class="pagination justify-content-around">
+              <li class="page-item">
+                <a id="precedent" class="page-link" href="#">Précédent</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" id="suivant" href="#">Suivant</a>
+              </li>
+            </ul>
+          </nav>
+        </div>        
       <!-- footer -->
       <div class="row footer d-flex">
         <footer class="row col-12 ">

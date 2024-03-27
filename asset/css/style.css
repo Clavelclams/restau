@@ -1,8 +1,10 @@
 body {
     overflow-x: hidden;
+    height: 100%;
 }
 header {
     background-color: #970747;
+    width: 100%;
 }
 .connexion{
     color: black;
@@ -105,3 +107,12 @@ aside {
 a {
     color: #000;
 }
+/* hover plat */
+.dropdown-menu {
+    display: none; /* Masquer la liste déroulante par défaut */
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    display: block; /* Afficher la liste déroulante au survol */
+  }
+  

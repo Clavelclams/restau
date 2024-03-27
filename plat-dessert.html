@@ -28,14 +28,20 @@
                     <li class="nav-item">
                       <a class="nav-link mx-lg-2" href="Catégorie.html">Catégorie</a>
                     </li>
-                    <li class="nav-item">
-                      <a class="nav-link mx-lg-2" href="plat.html">Plats</a>
+                    <li class="nav-item dropdown"> <!-- Ajouter la classe "dropdown" pour l'élément "Plats" -->
+                      <a class="nav-link mx-lg-2 dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Plats <!-- Texte de l'élément "Plats" -->
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown"> <!-- Liste déroulante -->
+                        <li><a class="dropdown-item" href="plat.html">Burger</a></li>
+                        <li><a class="dropdown-item" href="plat-pates.html">Pâtes</a></li>
+                        <li><a class="dropdown-item" href="plat-dessert.html">Dessert</a></li>
+                      </ul>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link mx-lg-2 active" href="contact.html">Contact</a>
+                      <a class="nav-link mx-lg-2" href="contact.html">Contact</a>
                     </li>
-                  </ul>
-                  
+                  </ul>                  
                 </div>
               </div>
               <a href="#" class="connexion pe-3">
@@ -124,50 +130,109 @@
           </nav>
         </div>
       </div>
-      <!-- section contact -->
+      <!-- section plat -->
       <div class="row section-categorie d-flex">
         <section class="col-12 justify-content-center row">
-          <div class="row m-4">
-            <h2 class=" mt-4 ms-4 Test text-center">Contact</h2>
+          <div class="row mt-3 justify-content-center ms-4">
+            <h2 class="ms-4 text-center">Nos Dessert</h2>
           </div>
-          <div class="row mb-4">
-            <form onsubmit="return verif()">
-              <div class="row ms-4 mb-3">
-                <div class="col ms-4">
-                  <label for="nom" class="form-label">Nom</label>
-                  <input type="text" id="nom" name="nom" class="form-control" placeholder="Texiou">
-                </div>
-                <div class="col me-4 ms-4">
-                  <label for="prénom" class="form-label">Prénom</label>
-                  <input type="text" id="prenom" name="prenom" class="form-control" placeholder="Gérard">
+          <div id="burger1" class="card m-4 me-4 col-md-2 w-25 burger-test mb-3">
+            <div class="row g-0 d-flex align-items-center">
+              <div class="col-md-4">
+                <img src="asset/img/cafe1.png" class="img-fluid rounded ms-1" alt="...">
+              </div>
+              <div  class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Café frappé</h5>
+                  <p id="p1" class="card-text">
+                    Café expresso mélangé à du lait, des glaçons et du sirop de sucre
+                    Frappé jusqu'à obtenir une texture mousseuse
+                    Rafraîchissant et parfait pour les journées chaudes
+                  </p>
+                  <p class="card-text text-end">
+                    <button class="btn btn-primary bouton-plat">Commander</button>
+                  </p>
                 </div>
               </div>
-              <div class="row ms-4 mb-3">
-                <div class="col ms-4">
-                  <label for="mail" class="form-label">Email</label>
-                  <input type="email" id="mail" name="mail" class="form-control" placeholder="monadresse@email.fr">
-                </div>
-                <div class="col me-4 ms-4">
-                  <label for="tel" class="form-label">Téléphone</label>
-                  <input type="tel" id="tel" name="tel" class="form-control" placeholder="06-XX-XX-XX-02">
+            </div>
+          </div>
+          <div id="burger2" class="card m-4 col-md-2 w-25 mb-3 burger-test">
+            <div class="row g-0 d-flex align-items-center">
+              <div class="col-md-4 ">
+                <img src="asset/img/cafe2.png" class="img-fluid rounded ms-1" alt="...">
+              </div>
+              <div  class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Cappuccino</h5>
+                  <p id="p2" class="card-text">
+                    Café expresso mélangé à du lait chaud
+                    Surmonté d'une généreuse couche de mousse de lait
+                    Saupoudré de cacao ou de cannelle
+                    Un café doux et réconfortant
+                  </p>
+                  <p class="card-text text-end">
+                    <button class="btn btn-primary bouton-plat">Commander</button>
+                  </p>
                 </div>
               </div>
-              <div class="row ms-4 mb-3">
-                <div class="col me-4 ms-4">
-                  <label for="demande" class="form-label">Votre demande :</label>
-                  <textarea class="form-control" id="demande" rows="3"></textarea>
+            </div>
+          </div>
+          <div id="burger3" class="card m-4 col-md-2 w-25 ms-4 mb-3 burger-test">
+            <div class="row g-0 d-flex align-items-center">
+              <div class="col-md-4">
+                <img src="asset/img/cafe4.png" class="img-fluid ms-1 rounded" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Affogato</h5>
+                  <p class="card-text">
+                    Une combinaison de café et de dessert
+                    Une boule de glace à la vanille arrosée d'un expresso chaud
+                    Un mariage divin entre le chaud et le froid
+                  </p>
+                  <p class="card-text text-end">
+                    <a href="commande.html">
+                      <button class="btn btn-primary bouton-plat">Commander</button>
+                    </a>
+                  </p>
                 </div>
               </div>
-              <p class="text-end me-4">
-                <button type="submit" id="btn_envoyer" class="btn btn-primary me-4">Envoyer</button>
-              </p>
-            </form>
+            </div>
+          </div>
+          <div id="burger4" class="card plat-carte col-md-2 w-25 mb-3 burger-test">
+            <div class="row g-0 d-flex ms-4 align-items-center">
+              <div class="col-md-4">
+                <img src="asset/img/cafe5.png" class="img-fluid rounded" alt="...">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Profiteroles au chocolat</h5>
+                  <p class="card-text">
+                    Petits choux garnis de crème pâtissière à la vanille
+                    Arrosés de chocolat fondu chaud
+                    Servis avec une boule de glace à la vanille
+                    Un dessert gourmand et réconfortant
+                  </p>
+                  <p class="card-text text-end">
+                    <button class="btn btn-primary bouton-plat">Commander</button>
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
-      </div>
-      <div class="row ">
-
-      </div>
+        <div class="row justify-content-center">
+          <nav class="col-12" aria-label="...">
+            <ul class="pagination justify-content-around">
+              <li class="page-item">
+                <a id="precedent" class="page-link" href="#">Précédent</a>
+              </li>
+              <li class="page-item">
+                <a class="page-link" id="suivant" href="#">Suivant</a>
+              </li>
+            </ul>
+          </nav>
+        </div>        
       <!-- footer -->
       <div class="row footer d-flex">
         <footer class="row col-12 ">
@@ -218,9 +283,13 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>  
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!--
+    <script src="https://ajax.gooleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     -->
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+   
     <script src="asset/js/script.js"></script>
-
-
 </body>
 </html>
