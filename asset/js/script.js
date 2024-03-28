@@ -180,8 +180,39 @@ $(document).ready(function()
             $('#suivant').removeClass('disabled');
         }
     }
-    $(`.bouton-plat`).click(function(event)
-    {
- 
-    }) 
+
+    //    commande id 
+    // Gérer le clic sur le bouton "Commander" dans la page des plats
+    $('.bouton-plat').click(function(event) {
+        event.preventDefault(); // Empêcher le comportement par défaut du lien
+        
+        // Récupérer les détails du plat sélectionné
+        var selectedPlat = {
+          titre: $(this).closest('.card').find('.card-title').text(),
+          description: $(this).closest('.card').find('.card-text').text(),
+          imageSrc: $(this).closest('.card').find('img').attr('src')
+        };
+    
+        // Stocker les détails du plat sélectionné dans le localStorage
+        localStorage.setItem('selectedPlat', JSON.stringify(selectedPlat));
+    
+        // Rediriger vers la page de commande
+        window.location.href = 'commande.html';
+    });
+    
+    // Cacher toutes les cartes de plat par défaut
+    $('.plat-carte').hide();
+    
+    // Lorsqu'un bouton de commande est cliqué
+    $('.bouton-plat').click(function() {
+      // Récupérer l'ID du plat sélectionné
+      var platID = $(this).closest('.card').attr('id');
+    
+      // Cacher toutes les cartes de plat
+      $('.plat-carte').hide();
+    
+      // Afficher la carte correspondante au plat sélectionné
+      $('#' + platID).show();
+    });
+
 })
