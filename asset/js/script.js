@@ -90,6 +90,13 @@ $(document).ready(function()
     // On peut bien sûr passer une variable
     var valeur = `Hello word`;
     $(`#champ`).val(valeur);
+    //formulaire commande 
+    function verif()
+    {
+        var envoie = true;
+        // récupère la valuer saisi dans nom et prénom
+    }
+   // formulaire contact
     function verif()
     {
         var envoi = true;
