@@ -7,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
+    <h1>ajax</h1>
     <button id="btn1">Clique 1</button>
     <button id="btn2">clique 2</button>
     <div id="div1">
@@ -14,17 +15,3 @@
     </div>
 </body>
 </html>
-<script>
-    $(document).ready(function()
-    {
-        $("#btn1").click(function()
-        {
-            $("#div1").load("partiel1.html");
-        });
-        $("#btn2").click(function()
-        {
-            $("#div1").load("partiel2.html");
-        });
-    });
-
-</script>

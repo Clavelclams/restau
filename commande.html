@@ -151,21 +151,21 @@
             </div>
           </div>
           <div class="row mb-3">
-            <form  onsubmit="return verif()"  class="d-flex flex-column flex-wrap align-content-center">
+            <form id="form-commande" onsubmit="return verif()"  class="d-flex flex-column flex-wrap align-content-center">
               <div class="row mb-3 ">
                 <div class="col-md-8 ms-4">
                   <label for="nom" class="form-label">Nom et Prénom</label>
-                  <input type="text" class="form-control" placeholder="Gerard">
+                  <input type="text" id="nom" class="form-control" placeholder="Gerard">
                 </div>
               </div>
               <div class="row ms-4 mb-3">
                 <div class="col-md-4 me-4">
                   <label for="mail" class="form-label">Email</label>
-                  <input type="email" class="form-control" placeholder="Email@exemple.fr">
+                  <input type="email" id="mail" class="form-control" placeholder="Email@exemple.fr">
                 </div>
                 <div class="ms-4 col-md-4">
                   <label for="tel" class="form-label">Téléphone</label>
-                  <input type="tel" class="form-control" placeholder="06-XX-XX-XX-02">
+                  <input type="tel" id="tel" class="form-control" placeholder="06-XX-XX-XX-02">
                 </div>
               </div>
               <div class="row ms-4 col-md-8 mb-3">

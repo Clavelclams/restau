@@ -1,12 +1,15 @@
 $(document).ready(function()
 {
     console.log("Prêt")
-
+    // exercice jquerry
+    /*
     $(`#bouton`).click(function()
     {
         alert(`Vous avez cliqué sur le bouton`)
         console.log("click bouton")
     });
+    */
+    // change la couleur de l'icon au survol 
     $(`.Icon`).mouseover(function()
     {
         $(this).css("color", "red");
@@ -15,6 +18,8 @@ $(document).ready(function()
     {
         $(this).css("color", "");
     });
+    // exercice jquerry 
+    /*
     $(`.Test`).mouseover(function()
     {
         $(this).css({
@@ -31,12 +36,17 @@ $(document).ready(function()
             "cursor" : "",
         });
     });
+    */
+    
     //la taille reveien pas donc je vais tenter un else if
     // $(`#TEST`).click(function()
     // {
     //     var h = $(this).height();
     //     $(this).height(500);
     // });
+    
+    // exo jquerry : 
+    /*
     var isExpanded = false; 
     $('#TEST').click(function()
     {
@@ -58,6 +68,8 @@ $(document).ready(function()
         var a = $(this).text();
         alert(a);
     });
+    */
+
     // Clique sur  h2 le texte change mais reviens pas à la normal on va refaire un else if 
     // $(`#Switch-text`).click(function()
     // {
@@ -90,12 +102,7 @@ $(document).ready(function()
     // On peut bien sûr passer une variable
     var valeur = `Hello word`;
     $(`#champ`).val(valeur);
-    //formulaire commande 
-    function verif()
-    {
-        var envoie = true;
-        // récupère la valuer saisi dans nom et prénom
-    }
+    
    // formulaire contact
     function verif()
     {
@@ -221,5 +228,70 @@ $(document).ready(function()
       // Afficher la carte correspondante au plat sélectionné
       $('#' + platID).show();
     });
+
+    // eval commence : 
+    //formulaire commande 
+    function verif() 
+    {
+        // recup la valeur saisie dans les input 
+        /* en js : var nom = document.getElementById('nom').value;
+        
+        var email = document.getElementById('mail').value;
+        var telephone = document.getElementById('tel').value;
+        var adresse = document.getElementById('adresse').value;
+      
+        var erreur = "";
+        if(nom.trim() === "") erreur += "Le nom est obligatoire.\n";
+        if(email.trim() === "") erreur += "L'email est obligatoire.\n";
+        if(telephone.trim() === "") erreur += "Le téléphone est obligatoire.\n";
+        if(adresse.trim() === "") erreur += "L'adresse est obligatoire.\n";
+      
+        if(erreur !== "") {
+          alert(erreur);
+          return false;
+        }
+        return true;*/
+        var submit = true;
+        var nom = $("#nom").val();
+        if (nom.trim() == "") 
+        {
+            submit = false;
+            alert("Le nom et prénom doivent être renseignés");
+        }
+        var email = $("#mail").val();
+        if (email.trim() == "") 
+        {
+            submit = false;
+            alert("Vous devez saisir votre adresse email");
+        }
+        var telephone = $("#tel").val();
+        if (telephone.trim() == "") 
+        {
+            submit = false;
+            alert("Vous devez saisir votre numéro de téléphone");
+        }
+        var adresse = $("#adresse").val();
+        if (adresse.trim() == "") 
+        {
+            submit = false;
+            alert("Vous devez saisir votre adresse");
+        }
+        return submit;
+    } 
+    $("#btn_envoyer").click(function(e)
+    {
+        /* On doit bloquer l'èvènement par défaut avec l'instruction 
+        ci-dessous
+        `e` est un objet nommé librement représentant l'évènement */
+        e.preventDefault();
+        // Appel de la fonction verif()
+        var formulaireValide = verif();
+        // Si tous les champs sont valides, on soumet le formulaire
+        if (formulaireValide)
+        {
+        $('#form-commande').submit(); // Soumission du formulaire
+        }
+    });
+   
 
 })
