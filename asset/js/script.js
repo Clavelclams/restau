@@ -278,7 +278,7 @@ $(document).ready(function()
         }
         return submit;
     } 
-    $("#btn_envoyer").click(function(e)
+    $("#bouton").click(function(e)
     {
         /* On doit bloquer l'èvènement par défaut avec l'instruction 
         ci-dessous
