@@ -1,0 +1,118 @@
+{
+    "categories": 
+    [
+        {
+          "id_categorie": 1,
+          "libelle": "Variété de Pates",
+          "image": "asset/img/pate.png",
+          "active": "Yes"
+        },
+        {
+          "id_categorie": 2,
+          "libelle": "Variété de Burger",
+          "image": "asset/img/burger.png",
+          "active": "Yes"
+        },
+        {
+          "id_categorie": 3,
+          "libelle": "Plats Asiatique",
+          "image": "asset/img/asian.png",
+          "active": "Yes"
+        },
+        {
+          "id_categorie": 4,
+          "libelle": "Plats végétarien",
+          "image": "asset/img/veggie.png",
+          "active": "Yes"
+        },
+        {
+          "id_categorie": 5,
+          "libelle": "Grillade et BBQ",
+          "image": "asset/img/bbq.png",
+          "active": "Yes"
+        },
+        {
+          "id_categorie": 6,
+          "libelle": "Café et Dessert",
+          "image": "asset/img/cafe et dessert.png",
+          "active": "Yes"
+        }
+    ],
+
+    "plats": 
+    [
+      {
+        "id_plat": "burger1",
+        "nom": "Burger BBQ",
+        "description": "Un burger savoureux avec un steak de bœuf grillé, du fromage suisse, de l'oignon rouge caramélisé, de la laitue croquante et de la sauce barbecue maison, servi sur un pain brioché toasté.",
+        "image": "asset/img/burger1.png"
+      },
+      {
+        "id_plat": "burger2",
+        "nom": "Burger Mushroom Swiss",
+        "description": "Un burger gourmet garni de champignons sautés, de fromage suisse fondant, de laitue fraîche, de tomates et d'une délicieuse sauce à l'ail, le tout servi sur un pain ciabatta grillé.",
+        "image": "asset/img/burger3.png"
+      },
+      {
+        "id_plat": "burger3",
+        "nom": "Burger Bacon",
+        "description": "Un burger juteux garni de bacon croustillant, de fromage cheddar, de laitue fraîche, de tomates et de sauce barbecue, le tout enveloppé dans un pain aux graines de sésame.",
+        "image": "asset/img/burger4.png"
+      },
+      {
+        "id_plat": "burger4",
+        "nom": "Le Sunchao Burger",
+        "description": "Un burger exotique avec du jambon grillé, de l'ananas rôti, du fromage suisse, de la laitue croquante, des oignons rouges et de la sauce teriyaki, servi sur un pain brioché doux.",
+        "image": "asset/img/burger2.png"
+      },
+      {
+        "id_plat": "dessert1",
+        "nom": "Café frappé",
+        "description": "Café expresso mélangé à du lait, des glaçons et du sirop de sucre. Frappé jusqu'à obtenir une texture mousseuse. Rafraîchissant et parfait pour les journées chaudes.",
+        "image": "asset/img/cafe1.png"
+      },
+      {
+        "id_plat": "dessert2",
+        "nom": "Cappuccino",
+        "description": "Café expresso mélangé à du lait chaud. Surmonté d'une généreuse couche de mousse de lait. Saupoudré de cacao ou de cannelle. Un café doux et réconfortant.",
+        "image": "asset/img/cafe2.png"
+      },
+      {
+        "id_plat": "dessert3",
+        "nom": "Affogato",
+        "description": "Une combinaison de café et de dessert. Une boule de glace à la vanille arrosée d'un expresso chaud. Un mariage divin entre le chaud et le froid.",
+        "image": "asset/img/cafe4.png"
+      },
+      {
+        "id_plat": "dessert4",
+        "nom": "Profiteroles au chocolat",
+        "description": "Petits choux garnis de crème pâtissière à la vanille. Arrosés de chocolat fondu chaud. Servis avec une boule de glace à la vanille. Un dessert gourmand et réconfortant.",
+        "image": "asset/img/cafe5.png"
+      },
+      {
+        "id_plat": "pate1",
+        "nom": "Tagliatelles à la bolognaise",
+        "description": "Tagliatelles fraîches délicieusement enrobées d'une sauce bolognaise maison riche et copieuse, préparée avec soin avec du bœuf mijoté, des tomates juteuses et des herbes fraîches.",
+        "image": "asset/img/pate5.png"
+      },
+      {
+        "id_plat": "pate2",
+        "nom": "Penne alla Vodka",
+        "description": "Des penne al dente avec une sauce onctueuse à la vodka, associant la douceur des tomates aux notes épicées de la vodka, pour une expérience gastronomique italienne raffinée.",
+        "image": "asset/img/pate3.png"
+      },
+      {
+        "id_plat": "pate3",
+        "nom": "Raviolis ricotta-épinards",
+        "description": "Savoureux raviolis farcis à la ricotta crémeuse et aux épinards frais, servis dans une sauce tomate parfumée ou au beurre et à la sauge, pour une délicieuse escapade italienne.",
+        "image": "asset/img/pate4.png"
+      },
+      {
+        "id_plat": "pate4",
+        "nom": "Linguine aux fruits de mer",
+        "description": "Des linguine al dente avec une sauce tomate riche, garnies de crevettes juteuses et de palourdes fraîches, offrant une expérience culinaire méditerranéenne inoubliable.",
+        "image": "asset/img/pate1.png"
+      }
+    ]
+}
+  

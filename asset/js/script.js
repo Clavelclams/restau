@@ -292,6 +292,35 @@ $(document).ready(function()
         $('#form-commande').submit(); // Soumission du formulaire
         }
     });
-   
-
+    // json controle 
+    // Fonction pour charger le contenu JSON à partir d'un fichier
+    console.log('chargement du fichier json')
+    function chargerContenuJSON(url, callback) 
+    {
+        var xhr = new XMLHttpRequest();
+        xhr.overrideMimeType("application/json");
+        xhr.open('GET', url, true);
+        xhr.onreadystatechange = function () 
+        {
+            if (xhr.readyState == 4 && xhr.status == 200) 
+            {
+                callback(xhr.responseText);
+            }
+        };
+        xhr.send(null);
+    }
+    console.log('test de ligne requette marche pas')
+    // URL du fichier JSON
+    var url = 'asset/js/plats.json';
+    
+    // Appel de la fonction pour charger le contenu JSON
+    chargerContenuJSON(url, function (response) 
+    {
+        // Parse JSON
+        var data = JSON.parse(response);
+        
+        // Maintenant, vous pouvez utiliser les données (data) dans votre application
+        console.log(data); // Pour vérifier si les données sont correctement chargées
+        // Vous pouvez appeler des fonctions pour afficher les catégories et les plats, etc.
+    });
 })
