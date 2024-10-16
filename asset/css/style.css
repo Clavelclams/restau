@@ -40,7 +40,7 @@ aside {
     background: #000;
 }
 /* test */
-
+/* phase de reparation*/
 .container-fluid {
     --bs-gutter-x: 0;
 }
@@ -48,7 +48,7 @@ aside {
     --bs-gutter-x: 0;
 
 }
- 
+
 .bordureRouge {
     border: 3px solid red;
     background-color: antiquewhite;
@@ -116,3 +116,10 @@ a {
     display: block; /* Afficher la liste déroulante au survol */
   }
   
+
+  @media (max-width: 768px) {
+    #burger1, #burger2, #burger3, #burger4 {
+        width: 100%;
+        margin: 1rem 0;
+    }
+}
