@@ -1,13 +1,16 @@
 <?php
-$db = new PDO('mysql:host=localhost;charset=utf8;dbname=restaurant', 'admin', 'Afpa1234');
+include('db_connect.php')
+class DAO {
+    private $db;
+    public function __construct($db) {
+        $this->db = $db; 
+    }
+    public function getAllPlats() {
+        $query = "SELECT * FORM plat";
+    }
+    
+}
 
-try {
-    $db = new PDO('mysql:host=localhost;charset=utf8;dbname=restaurant', 'admin', 'Afpa1234');
-    $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-}
-catch (Exception $e) {
-    echo 'Erreur : ' . $e->getMessage() . '<br />';
-    echo 'N° : ' . $e->getCode();
-    die('Fin du script');
-}
+
+
 ?>
