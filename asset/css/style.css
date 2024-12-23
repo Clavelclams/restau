@@ -107,9 +107,65 @@ aside {
 a {
     color: #000;
 }
+/* style pour le header en php car se chevauche */
+header {
+    position: relative;
+    z-index: 1000;
+    width: 100%;
+}
+.carousel {
+    margin-top: 60px; 
+}
+
+body {
+    padding-top: 130px; 
+}
+
+@media (max-width: 576px) {
+    .carousel {
+        margin-top: 50px; 
+    }
+
+    body {
+        padding-top: 120px; 
+    }
+}
+
+
+@media (min-width: 577px) and (max-width: 768px) {
+    .carousel {
+        margin-top: 55px; 
+    }
+
+    body {
+        padding-top: 125px; 
+    }
+}
+
+
+@media (min-width: 769px) and (max-width: 992px) {
+    .carousel {
+        margin-top: 60px; 
+    }
+
+    body {
+        padding-top: 130px; 
+    }
+}
+
+
+@media (min-width: 993px) {
+    .carousel {
+        margin-top: 60px; 
+    }
+
+    body {
+        padding-top: 130px;
+    }
+}
 /* hover plat */
 .dropdown-menu {
-    display: none; /* Masquer la liste déroulante par défaut */
+    display: none; 
   }
   
   .dropdown:hover .dropdown-menu {

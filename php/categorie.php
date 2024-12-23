@@ -1,7 +1,7 @@
-<?php include('php/header.php'); ?>
+<?php include('header.php'); /* lien redirige pas au bonne endroit  */ ?>
 
 <?php
 Echo "jfjfjoi"
 ?>
 
-<?php include('php/footer.php'); ?>
+<?php include('footer.php'); ?>
